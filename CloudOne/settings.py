@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'cloud1'
+    'cloud1',
+    'widget_tweaks',
 ]
 
 MIDDLEWARE = [
@@ -125,3 +126,11 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, 'staticfiles'),]
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'tm825141@gmail.com'
+EMAIL_HOST_PASSWORD = 'zuwuvcbvibgvkbvp'
+EMAIL_USE_TLS = True
+
+# 'suleman@cloudonedevelopers.com'
