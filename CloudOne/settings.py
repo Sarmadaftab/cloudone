@@ -127,10 +127,10 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, 'staticfiles'),]
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST = 'smtp.zoho.com'
 EMAIL_PORT = 587
-EMAIL_HOST_USER = 'tm825141@gmail.com'
-EMAIL_HOST_PASSWORD = 'zuwuvcbvibgvkbvp'
+EMAIL_HOST_USER = 'suleman@cloudonedevelopers.com'
+EMAIL_HOST_PASSWORD = 'Vi6MQUuH8dSr'
 EMAIL_USE_TLS = True
 
 # 'suleman@cloudonedevelopers.com'

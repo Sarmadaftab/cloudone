@@ -10,7 +10,6 @@ def home(request):
         form = ContactForm(request.POST or None)
         if form.is_valid():
             contact_model = form.save()
-            print("!!!!!!!!!!!!!", contact_model, form.save())
             contacter_name = contact_model.name
             contacter_email = contact_model.email
             contacter_message = contact_model.message
@@ -20,9 +19,9 @@ def home(request):
             send_mail(
                 subject,
                 message,
-                'tm825141@gmail.com',
+                'suleman@cloudonedevelopers.com',
                 [contacter_email],
-                fail_silently=True,
+                fail_silently=False,
             )
             mail = Email.objects.create(contact=contact_model, mail=contacter_email, message=contacter_message)
             return redirect('home')
