@@ -7,15 +7,15 @@
         <div class="col-12">
           <nav class="main-nav">
             <!-- ***** Logo Start ***** -->
-            <a href="index.html" class="logo">
+            <a href="{% url 'home' %}" class="logo">
               <img src="{% static 'assets/images/logo.png' %}" alt="Logo" width="390" height="78.313" >
             </a>
             <!-- ***** Logo End ***** -->
             <!-- ***** Menu Start ***** -->
             <ul class="nav">
-              <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
-              <li class="scroll-to-section"><a href="#services">Services</a></li>
-              <li class="scroll-to-section"><div class="main-red-button-hover"><a href="#contact">Contact Us</a></div></li>
+              <li class="scroll-to-section"><a href="{% url 'home' %}#top" class="active">Home</a></li>
+              <li class="scroll-to-section"><a href="{% url 'home' %}#services">Services</a></li>
+              <li class="scroll-to-section"><div class="main-red-button-hover"><a href="{% url 'home' %}#contact">Contact Us</a></div></li>
             </ul>
             <a class='menu-trigger'>
                 <span>Menu</span>
